@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Lazy;
 @Configuration
 @ComponentScan(basePackages = "com.example.demo.pojo")
 public class MyConfiguration2 {
-    @Bean
+    @Bean("myBean3")
     public MyBean myBean(){
         System.out.println("myBean Initialized");
         return new MyBean();

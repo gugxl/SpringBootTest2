@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class MyConfiguration {
-    @Bean
+    @Bean("myBean2")
     public MyBean myBean(){
         System.out.println("myBean Initialized");
         return new MyBean();
